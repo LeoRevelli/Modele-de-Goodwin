@@ -1,0 +1,112 @@
+\documentclass{article}
+\usepackage{amssymb}
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\usepackage{lipsum}
+\makeatletter
+\def\maketitle{%
+    \begin{center}\leavevmode
+        \normalfont
+        \rule[0pt]{\textwidth}{1pt}\par
+        {\LARGE \@title\par}%
+        {\Large \@author\par}%
+        {\Large \@date\par}%
+        \rule[0pt]{\textwidth}{1pt}\par
+    \end{center}%
+}
+\makeatother
+\title{Le modèle de Goodwin}
+\author{Léo Revelli}
+\date{}
+
+
+\begin{document}
+\maketitle
+\section{Les variables du modèle : }
+
+- La production, Y : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+- Le capital, K : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+Dans ce modèle, il peut y avoir du chômage, on va donc distinguer le travail de la population, ainsi :
+
+- Le travail, L : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+- La population, N : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+- Les connaissances, la productivité, a : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+- Le salaire, les travailleurs = le salaire moyen : w : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$
+
+\section{Postulat : }
+
+\subsection{Postulat 1: postulat sur la fonction de production : }
+
+La fonction de production F : $[0, +\infty[$ $\longrightarrow$ $[0, +\infty[$ est de \textbf{Leontief} : 
+
+F( K(t), a(t)L(t)) = min ($\frac{K(t}{v}$ , a(t)L(t))
+
+V représente la \textbf{capacité de production} ( avec la fonction de production de type Leontief il n'y a plus de substituabilité entre le capital et le travail, on ne peut pas faire sans l'un des deux), on a V<0. On suppose que le stock de capital est utilisé à 100\% (c'est-à-dire que nous n'allons jamais acheter du capital qui ne va pas nous servir car nous n'avons pas assez d'employés ) .
+
+De plus, on a : $\frac{K(t)}{v}$ = a(t)L(t) = Y(t) , $\forall t \in [0, +\infty[$  .
+
+\subsection{Postulat 2 : L'évolution de a, n et w :}
+
+- Soit l'accroissement des connaissances $\stackrel{.}{a}$ = $\alpha$ a  $\Leftrightarrow$ le taux de croissance de a est $\alpha$
+
+- De même, l'accroissement de la population est : $\stackrel{.}{N}$ = $\beta$ N
+
+On pose $\phi$  ($\lambda$) une fonction croissante appellée courbe de Phillips avec $\lambda$ = $\frac{L}{N}$ représente le taux d'emploi
+
+- Enfin, on a, l'accroissement du salaire moyen : $\stackrel{.}{w}$ =  $\phi$ ($\lambda$) (ainsi, plus le taux d'emploi est grand, plus l'accroissement de salaire va augenter et inversion, c'est l'idée marxiste de $\textbf{l'armée de réserve du capitalisme}$ $\Rightarrow$ si tout le monde a du travail, alors les employeurs peuvent plus difficilement changer la main d'oeuvre ce qui permet aux travailleurs d'augmenter leurs salaires)
+
+\subsection{ Postulat 3 : La loi de Say : }
+
+Les salaires sont entièrement consommés et les profits sont entiérement réinvestis (ce qui implique que l'offre est égal à la demande, nous sommes donc bien dans un modèle classique). 
+
+On a alors : 
+
+$\stackrel{.}{K}$ = ( y -wL) - $\delta$K avec $\delta$ la dépréciation du capital telle que $\delta$ > 0
+
+$\Rightarrow$ Le taux de croissance du capital = (production - salaire des travailleurs - nombre de travailleurs) - dépréciation du capital (car dans ce modèle seuls les travailleurs consomment et pas les chômeurs).
+\\\\
+On pose $\omega$ la part des salaires dans la production telle que: $\omega$ = $\frac{wL}{Y}$ = $\frac{wL}{aL}$ = $\frac{w}{a}$ $\Rightarrow$ ainsi d'après le postulat 3 : $\stackrel{.}{K}$ = (Y-wL) - $\delta$K = (Y - Y$\omega$) - $\delta$K = Y(1- $\omega$) - $\delta$K ( car $\omega$ = $\frac{wL}{Y}$ $\Leftrightarrow$ Y$\omega$ = wL )
+\\\\
+On a $\frac{\stackrel{.}{Y}}{Y}$ = $\frac{1-\omega}{v}$ - $\delta$ , en effet ln(Y) = ln( $\frac{K}{V}$ ) = ln(K) - ln(v) $\Rightarrow$ $\frac{\stackrel{.}{Y}}{Y}$ = $\stackrel{.}{ln(Y)}$ = $\stackrel{.}{ln(K)}$ - $\stackrel{.}{ln(v)}$ = $\frac{\stackrel{.}{K}}{K}$ - $\frac{\stackrel{.}{v}}{v}$ = $\frac{\stackrel{.}{K}}{K}$ - 0 (car v est une constante ) or $\stackrel{.}{K}$ = (1-$\omega$) $\frac{1}{v}$Y - $\delta$K donc $\frac{\stackrel{.}{K}}{K}$ = (1 - $\omega$) $\frac{Y}{K}$ - $\delta$ $\frac{K}{K}$ = (1 - $\omega$) $\frac{Y}{K}$ - $\delta$. De plus, Y = $\frac{K}{v}$ donc $\frac{Y}{K}$ = $\frac{K}{Kv}$
+= $\frac{1}{v}$ ainsi $\frac{\stackrel{.}{Y}}{Y}$ = $\frac{\stackrel{.}{K}}{K}$ = (1 - $\omega$) $\frac{1}{v}$ - $\delta$ ( car (1 - $\omega$ $\frac{Y}{K}$ - $\delta$ = (1 - $\omega$) $\frac{1}{v}$ - $\delta$ 
+\\\\
+$\Rightarrow$ plus $\omega$ est grand, plus (1 - $\omega$ ) est petit $\Rightarrow$ le taux de croissance de la production dépend négativement de $\omega$. C'est logique car selon les économistes classiques la croissance est tirée par les investissements . On pose g( $\omega$) le taux de croissance tel que :
+
+g( $\omega$ ) = $\frac{1- \omega}{v}$ - $\delta$
+
+\section{Théoréme :} 
+
+La dynamique du modèle de Goodwin est décrite par les deux équations suivantes : 
+
+$$ \left\{
+\begin{array}{l}
+$$\stackrel{.}{\omega}$ = $\omega$ ($\phi$( $\lambda$ ) - $\alpha$ )$ \\
+$$\stackrel{.}{\lambda}$ = $\lambda$ (g($\omega$) - $\alpha$ - $\beta$ )$ \\
+\end{array}
+\right.
+$$
+\\\\
+\textbf{Démonstration :}
+\\
+On a donc $\omega$ $\frac{w}{a}$ $\Rightarrow$ ln($\omega$)= ln ( $\frac{w}{a}$) = ln(w) - ln(a) $\Rightarrow$ 	$\frac{\stackrel{.}{w}}{w}$ = $\frac{\stackrel{.}{a}}{a}$ = $\frac{\phi( \lambda) w}{w}$ - $\frac{\alpha a}{a}$ $\Rightarrow$ $\stackrel{.}{\omega}$ = $\omega$ ($\phi$( $\lambda$ ) - $\alpha$ )
+\\\\
+On a $\lambda$ = $\frac{L}{N}$ $\Rightarrow$ ln($\lambda$) = ln(L) - ln(N) or Y=aL $\Rightarrow$ ln($\lambda$) = ln($\frac{Y}{a}$) - ln(N) = ln(Y) -  ln(a) - ln(N) donc $\frac{\stackrel{.}{\lambda}}{\lambda}$ = $\frac{\stackrel{.}{Y}}{Y}$ - $\frac{\stackrel{.}{a}}{a}$ - $\frac{\stackrel{.}{N}}{N}$ = g($\omega$) - $\alpha$ - $\beta$  (car $\frac{\stackrel{.}{Y}}{Y}$ = $\frac{\stackrel{.}{K}}{K}$ = g($\omega$) d'après le postulat 3)
+\\
+Donc $\stackrel{.}{\lambda}$ = $\lambda$ (g($\omega$) - $\alpha$ - $\beta$ )
+
+\end{document}
+
+
+
+
+
